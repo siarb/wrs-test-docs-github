@@ -1,0 +1,12 @@
+name: Writerside docs errors parser
+description: Parse report.json test results report
+inputs:
+  reportFile:
+    description: Path to the report.json file
+    required: true
+runs:
+  using: 'docker'
+  image: 'Dockerfile'
+  args:
+    - '/github/workspace/artifacts/report.json'
+    - 'm'
