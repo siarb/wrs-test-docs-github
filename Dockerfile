@@ -9,4 +9,4 @@ RUN curl -o wrs-doc-app.jar -L https://packages.jetbrains.team/maven/p/writersid
 RUN ls -la /app
 RUN chmod +x wrs-doc-app.jar
 
-ENTRYPOINT ["java", "-jar", "wrs-doc-app.jar"]
+ENTRYPOINT ["java", "-jar", "/app/wrs-doc-app.jar"]
