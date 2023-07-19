@@ -14,4 +14,4 @@ runs:
   image: 'Dockerfile'
   args:
     - 'artifacts/report.json'
-    - '${{ env.INSTANCE }}'
+    - '${{ inputs.instance }}'
